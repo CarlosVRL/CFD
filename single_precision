@@ -1,0 +1,28 @@
+# Algorithm Source: Introduction to CFD by Prof M. Ramakrishna
+# Department of Aerospace Engineering, IIT Madras
+
+# Problem: Find a smallest positive number such that:
+#
+#   1.0 + e != 1 (not equals)
+#
+# Similarly, find a largest positive number such that
+#
+#   1.0 + e = 1
+#
+# Data types include: float, double, long, 
+
+# Problem Start
+
+# Initialization
+e = 1.0
+
+# Main Logic Engine
+while (1 + e) > 1:
+
+  # halve the residual at each step
+  e = 0.5 * e
+
+  # problem statement met
+  break
+  
+print("The sum 1.0 + e is: {}".format((1+e)))
